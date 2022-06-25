@@ -38,6 +38,8 @@ In this project, I'll onboard 20 new Linux users onto a server. I'll Create a sh
 - ### Confirm that the group has been created
 
   `sudo grep developers /etc/group`
+  
+  ![grp created](https://user-images.githubusercontent.com/107736487/175752838-b82e29c1-4272-4842-a70f-1b0dc15f0058.PNG)
 
 - ### Create a file named **"id_rsa.pub"** for my **public key** copy and paste the below key into it using vi editor
 
@@ -90,7 +92,7 @@ In this project, I'll onboard 20 new Linux users onto a server. I'll Create a sh
 
   `vi id_rsa`
 
-- ### Using vi editor, create a file for my **shell script** named **"onboarding_user .sh"** and copy my shell script below into it. 
+- ### Using vi editor, create a file for my **Shell script** named **"onboarding_user .sh"** and copy my Shell script below into it. 
   ```
   #!/bin/bash
   userfile=$(cat names.csv)
@@ -115,17 +117,17 @@ In this project, I'll onboard 20 new Linux users onto a server. I'll Create a sh
 
   # Create .ssh folder in the user home directory
      su - -c "mkdir ~/.ssh" $user
-     echo ".ssh directory created for new user $user"
+     echo ".ssh directory created for user $user"
      echo
 
   # Set "rwx" user permission for the .ssh directory 
      su - -c "chmod 700 ~/.ssh" $user
-     echo "The new user $user permission for .ssh directory is set"
+     echo "$user permission for .ssh directory is set"
      echo
 
   # Create an authorized_key file
      su - -c "touch ~/.ssh/authorized_keys" $user
-     echo "Authorized key file created for new user $user"
+     echo "Authorized key file created for user $user"
      echo
 
   # Set "rw" user permission for the key file
@@ -134,7 +136,7 @@ In this project, I'll onboard 20 new Linux users onto a server. I'll Create a sh
      echo
 
   # Create and set public key for users in the server
-     cp -R "/home/ubuntu/shell/id_rsa.pub" "/home/$user/.ssh/authorized_keys"
+     cp -R "/home/ubuntu/Shell/id_rsa.pub" "/home/$user/.ssh/authorized_keys"
      echo "Public key has been copied successfully to new user $user authorized_keys file"
      echo
 
