@@ -192,12 +192,20 @@ In this project, I'll onboard 20 new Linux users onto a server. I'll Create a sh
 
 - ### Try and ssh into the server instance as one of the newly created user using their **.pem key**
          
-     1. on a diferent terminal,**(git bash in vscode)** i'll create a file named **aux.pem** in **C:\Users\USER\Downloads directory** in my local computer, and copy the given private key into it
+     1. on a diferent terminal,**(git bash in vscode)** i'll create a file named **aux-prj.pem** in **C:\Users\USER\Downloads directory** in my local computer, and copy the given private key into it
 
-        `vi aux.pem`
+        `vi aux-prj.pem`
 
-     2. I'll split my window terminal.Then Go to **C:\Users\USER\Downloads** directory where i save the newly created file **"aux.pem key"**. then ssh into the server as one of the newly created user
+     2. I'll split my window terminal.Then Go to **C:\Users\USER\Downloads** directory where i save the newly created file **"aux-prj.pem key"**. then ssh into the server as one of the newly created user
 
-  `ssh -i "aux.pem" Chioma@ec2-3-8-16-160.eu-west-2.compute.amazonaws.com`
+  `ssh -i "aux-prj.pem" Ayo@ec2-18-130-159-38.eu-west-2.compute.amazonaws.com`
+  
+  ![ay ssh](https://user-images.githubusercontent.com/107736487/175793833-86698084-0652-4fd5-b5ab-83bc70843d58.PNG)
+  
+  ![ay whoami](https://user-images.githubusercontent.com/107736487/175793842-dba83259-f7a4-409b-a7fb-8cc22f5e4e51.PNG)
+ 
+  ![jess ssh](https://user-images.githubusercontent.com/107736487/175793885-05710a4b-bea0-4abf-872d-f7d0cb2d50c2.PNG)
+  
+  ![jess whoami](https://user-images.githubusercontent.com/107736487/175793893-3dd6bcb2-cddc-4e88-84b9-cb54dba62948.PNG)
 
 ## End of Project... 
