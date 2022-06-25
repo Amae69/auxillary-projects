@@ -165,18 +165,26 @@ In this project, I'll onboard 20 new Linux users onto a server. I'll Create a sh
 - ### View the users created and confirm they are in the developer group
      
   `ls -la /home`
+  
+  ![new user](https://user-images.githubusercontent.com/107736487/175754049-5e18261c-996a-479b-aea9-cf752a4dc863.PNG)
 
 - Go to one of the user's home to see if **.ssh** folder is created 
 
   `sudo ls -la /home/kris` 
+  
+  ![ssh folder for user](https://user-images.githubusercontent.com/107736487/175754327-33c7fd08-d6ba-4f34-8fc7-9c5bac5be5e2.PNG)
 
 - ### Confirm from one of the user that the user's has authorization_file in their .ssh folder 
        
   `sudo ls -la /home/Lydia/.ssh`
+  
+  ![auth file](https://user-images.githubusercontent.com/107736487/175754353-a6b503a6-50b3-43a8-aa4b-949f05759abe.PNG)
 
 - ### Confirm from one of the user that the authorization_file contain the user's public key
      
   `sudo cat /home/Lydia/.ssh/authorized_keys`
+  
+  ![public key](https://user-images.githubusercontent.com/107736487/175754376-8e1201db-62db-4194-b86a-69b40ea3579f.PNG)
 
 - ### Try and ssh into the server instance as one of the newly created user using their **.pem key**
          
