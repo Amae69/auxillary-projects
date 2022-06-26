@@ -1,10 +1,10 @@
 ## AUX PROJECT 1: SHELL SCRIPTING
 ---
-### Screen Record Demo of Onboarding Multiple Users To A Linux Server Using Shell Scripting
-
-https://user-images.githubusercontent.com/106500055/175438074-a9ff9989-e5ec-4ec2-9418-6113a31cdf1c.mp4
-
 In this project, I'll onboard 20 new Linux users onto a server. I'll Create a shell script to automate this task. The script will reads a csv file that contains the first name of the users to be onboarded.
+
+Here is a link: https://youtu.be/9aU6G4qWt7o  of a screen record demo of how i onboard multiple users to a linux server using shell script 
+
+## Start Project:
 
 - ### Create the project folder called **Shell** and cd into it
 
